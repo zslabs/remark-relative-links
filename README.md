@@ -40,7 +40,7 @@ remark()
 
 Add target and rel attributes to external links.
 
-###### `options.domainRegex`
+###### `options.domainRegex` **Required**
 
 Regex used to decipher what domain to "relative-ize". The example provided should handle most cases.
 
