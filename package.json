@@ -1,0 +1,34 @@
+{
+  "name": "remark-relative-links",
+  "version": "0.0.1",
+  "description": "Rewrites absolute URLs to relative ones.",
+  "main": "index.js",
+  "author": "Zach Schnackel <info@zslabs.com>",
+  "license": "MIT",
+  "keywords": [
+    "markdown",
+    "remark",
+    "plugin",
+    "link",
+    "url"
+  ],
+  "homepage": "https://github.com/zslabs/remark-relative-links#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zslabs/remark-relative-links.git"
+  },
+  "dependencies": {
+    "babel-runtime": "6.26.0",
+    "unist-util-visit": "1.1.3"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "cross-env": "5.0.5",
+    "remark": "8.0.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "prepublish": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir ."
+  }
+}
