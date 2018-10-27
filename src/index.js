@@ -12,8 +12,7 @@ module.exports = (options = {}) => {
   }
 
   function transform(tree) {
-    visit(tree, 'link', visitor);
-    visit(tree, 'linkReference', visitor);
+    visit(tree, ['link', 'linkReference'], visitor);
   }
 
   return transform;

@@ -1,6 +1,6 @@
 {
   "name": "remark-relative-links",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Rewrites absolute URLs to relative ones.",
   "main": "index.js",
   "author": "Zach Schnackel <info@zslabs.com>",
