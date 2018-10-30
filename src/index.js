@@ -1,7 +1,7 @@
 const visit = require('unist-util-visit');
 
-module.exports = (options = {}) => {
-  if (!options.domainRegex) {
+module.exports = function (options) {
+  if (!options || !options.domainRegex) {
     throw Error('Missing required "domainRegex" option');
   }
 
