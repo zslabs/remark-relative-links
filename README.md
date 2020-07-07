@@ -34,6 +34,13 @@ remark()
 <p><a href="/blog/article/">Blog</a></p>
 ```
 
+### Command Line
+
+```shell
+remark ./test.md -u "remark-relative-links=domainRegex:'/http[s]*:\/\/[www.]*yoursite\.com[/]?/'" -u remark-html > ./test.html
+```
+
+
 ## API
 
 ### `remark.use(relativeLinks[, options])`
@@ -42,7 +49,7 @@ Add target and rel attributes to external links.
 
 ###### `options.domainRegex` **Required**
 
-Regex used to decipher what domain to "relative-ize". The example provided should handle most cases.
+Regex or Regex-String used to decipher what domain to "relative-ize". The example provided should handle most cases.
 
 ## License
 
