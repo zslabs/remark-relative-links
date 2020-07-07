@@ -36,7 +36,7 @@ remark()
 
 ### Command Line
 
-```shell
+```bash
 remark ./test.md -u "remark-relative-links=domainRegex:'http[s]*:\/\/[www.]*yoursite\.com[/]?'" -u remark-html > ./test.html
 ```
 
