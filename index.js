@@ -12,7 +12,7 @@ module.exports = function (options) {
   }
 
   function transform(tree) {
-    visit(tree, ['link', 'linkReference'], visitor);
+    visit(tree, ["link", "image", "definition"], visitor);
   }
 
   return transform;
