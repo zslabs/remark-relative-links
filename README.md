@@ -19,7 +19,7 @@ const relativeLinks = require('remark-relative-links');
 
 remark()
   .use(relativeLinks, {
-    domainRegex: /http[s]*:\/\/[www.]*yoursite\.com[/]?/,
+    domainRegex: /http[s]?:\/\/(www\.)?yoursite\.com[/]?/,
   })
   .use(html)
   .process('[Blog](https://yoursite.com/blog/article/)', (err, file) => {
